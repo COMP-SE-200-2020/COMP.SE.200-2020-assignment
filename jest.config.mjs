@@ -17,7 +17,7 @@ export default {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  "collectCoverage": true,
+  // "collectCoverage": true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   "collectCoverageFrom": [
@@ -101,7 +101,7 @@ export default {
   // Run tests from one or more projects
   // projects: undefined,
 
-  // Use this configuration option to add custom reporters to Jest
+  // Use this configuration option to custom reporters to Jest
   // reporters: undefined,
 
   // Automatically reset mock state between every test
