@@ -1,10 +1,10 @@
-import words from "..src/words"
+import words from "../src/words"
 
 test("words without pattern", () => {
   expect(words("two words")).toStrictEqual(["two", "words"])
   expect(words("two, words")).toStrictEqual(["two", "words"])
-  expect(words("three, one & words")).toStrictEqual(["two", "words"])
-  expect(words("three, one, & words")).toStrictEqual(["two", "words"])
+  expect(words("three, one & words")).toStrictEqual(["three", "one", "words"])
+  expect(words("three, one, & words")).toStrictEqual(["three", "one", "words"])
   expect(words("one")).toStrictEqual(["one"])
   expect(words("one ")).toStrictEqual(["one"])
   expect(words("one &")).toStrictEqual(["one"])
