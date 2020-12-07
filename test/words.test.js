@@ -13,9 +13,9 @@ test("words without pattern", () => {
 })
 
 test("invalid input", () => {
-  expect(words([1,2])).toStrictEqual([])
-  expect(words([])).toStrictEqual([])
-  expect(words(123)).toStrictEqual([])
-  expect(words({})).toStrictEqual([])
-  expect(words({"a":"b"})).toStrictEqual([])
+  expect(() => words([1,2])).toThrow(TypeError)
+  expect(() => words([])).toStrictEqual(TypeError)
+  expect(() => words(123)).toStrictEqual(TypeError)
+  expect(() => words({})).toStrictEqual(TypeError)
+  expect(() => words({"a":"b"})).toStrictEqual(TypeError)
 })
